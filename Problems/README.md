@@ -13,3 +13,6 @@ Returns the smallest number in the array
 
 ## 2. AverageOfArray
 Returns the array of average, calculate by dividing sum by number of elements
+
+## 3. Cheking whether "n" is prime or composite
+returns the number after determining whether it is prime or composite.

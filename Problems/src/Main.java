@@ -34,3 +34,25 @@ class AverageOfArray {
         System.out.println("Average is: " + findAverage(arr));
     }
 }
+
+//Problem 3
+class PrimeChecker {
+    // Method to check if a number is prime or composite
+    public static String checkPrime(int n) {
+        // Check divisors from 2 up to square root of n
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            // If divisible by any number, it's composite
+            if (n % i == 0) {
+                return "Composite";
+            }
+        }
+        // If else, it's prime
+        return "Prime";
+    }
+
+    public static void main(String[] args) {
+        // Test cases
+        System.out.println("7 is " + checkPrime(7));
+        System.out.println("10 is " + checkPrime(10));
+    }
+}

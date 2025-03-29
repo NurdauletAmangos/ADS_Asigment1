@@ -22,3 +22,6 @@ Computes factorial of a number n (n!) using recursion
 
 ## 5. Fibonacci sequence 
 Returns the nth Fibonacci number using recursive method
+
+## 6. Power calculation
+Computes a^n (a raised to power n) recursively

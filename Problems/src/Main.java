@@ -93,3 +93,18 @@ class Fibonacci {
         System.out.println(fibonacci(17));
     }
 }
+
+// Problem 6
+class Power {
+    // Recursive power calculation (a^n)
+    public static int power(int a, int n) {
+        // Base case: any number to power 0 is 1
+        if (n == 0) return 1;
+        return a * power(a, n - 1);
+    }
+
+    public static void main(String[] args) {
+        // Calculate 2^10 (should be 1024)
+        System.out.println(power(2, 10));
+    }
+}

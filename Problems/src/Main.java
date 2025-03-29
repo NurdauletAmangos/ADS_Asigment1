@@ -56,3 +56,22 @@ class PrimeChecker {
         System.out.println("10 is " + checkPrime(10));
     }
 }
+
+//Problem 4
+class Factorial {
+    // Recursive factorial calculation
+    public static int factorial(int n) {
+        // Base cases: 0! and 1! both equal 1
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        // Recursive case: n! = n * (n-1)!
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        // Calculate and print factorial
+        System.out.println(factorial(n));
+    }
+}

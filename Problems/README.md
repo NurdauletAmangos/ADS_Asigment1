@@ -16,3 +16,6 @@ Returns the array of average, calculate by dividing sum by number of elements
 
 ## 3. Cheking whether "n" is prime or composite
 returns the number after determining whether it is prime or composite.
+
+## 4. Factorial calculator
+Computes factorial of a number n (n!) using recursion

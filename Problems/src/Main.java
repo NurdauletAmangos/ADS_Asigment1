@@ -75,3 +75,21 @@ class Factorial {
         System.out.println(factorial(n));
     }
 }
+
+//Problem 5
+class Fibonacci {
+    // Recursive Fibonacci number calculation
+    public static int fibonacci(int n) {
+        // fib(0)=0, fib(1)=1
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        // fib(n) = fib(n-1) + fib(n-2)
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    public static void main(String[] args) {
+        // Test cases
+        System.out.println(fibonacci(5));
+        System.out.println(fibonacci(17));
+    }
+}

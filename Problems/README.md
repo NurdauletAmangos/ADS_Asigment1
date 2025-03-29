@@ -19,3 +19,6 @@ returns the number after determining whether it is prime or composite.
 
 ## 4. Factorial calculator
 Computes factorial of a number n (n!) using recursion
+
+## 5. Fibonacci sequence 
+Returns the nth Fibonacci number using recursive method

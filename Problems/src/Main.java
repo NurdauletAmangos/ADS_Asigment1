@@ -172,3 +172,18 @@ class BinomialCoefficient {
         System.out.println(binomialCoeff(7, 3)); // 35
     }
 }
+// Problem 10
+
+class EuclideanGCD {
+    public static int gcd(int a, int b) {
+        //when b becomes 0, a is the GCD
+        if (b == 0) return a;
+        //gcd(a,b) = gcd(b, a mod b)
+        return gcd(b, a % b);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(gcd(32, 48)); // 16
+        System.out.println(gcd(10, 7));  // 1
+    }
+}

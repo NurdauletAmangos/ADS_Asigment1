@@ -35,4 +35,5 @@ Checks if a string consists only of digits
 ## 9. Binomial coefficient
 Calculates "n choose k" combinations using Pascal's triangle rule
 
-## 10.
+## 10. GCD calculator
+Finds greatest common divisor using Euclidean algorithm

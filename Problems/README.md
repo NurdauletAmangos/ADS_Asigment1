@@ -32,4 +32,7 @@ Reverses the elements of an array in-place using recursion
 ## 8. Digit string validator
 Checks if a string consists only of digits 
 
-## 9.
+## 9. Binomial coefficient
+Calculates "n choose k" combinations using Pascal's triangle rule
+
+## 10.

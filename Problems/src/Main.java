@@ -157,3 +157,18 @@ class DigitChecker {
         System.out.println(isAllDigits("123a12")); // "No"
     }
 }
+
+// Problem 9
+class BinomialCoefficient {
+    // Recursive calculation of binomial coefficient (n choose k)
+    public static int binomialCoeff(int n, int k) {
+        if (k == 0 || k == n) return 1;
+        // Recursive case: Pascal's triangle rule
+        return binomialCoeff(n - 1, k - 1) + binomialCoeff(n - 1, k);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(binomialCoeff(2, 1)); // 2
+        System.out.println(binomialCoeff(7, 3)); // 35
+    }
+}

@@ -134,3 +134,26 @@ class ReverseArray {
         }
     }
 }
+
+// Problem 8
+class DigitChecker {
+    // Wrapper method to check if string contains only digits
+    public static String isAllDigits(String s) {
+        if (s.isEmpty()) return "Yes";
+        // Call helper method starting at index 0
+        return checkDigits(s, 0) ? "Yes" : "No";
+    }
+
+    // Helper recursive method
+    private static boolean checkDigits(String s, int index) {
+        if (index == s.length()) return true;
+        // If current character isn't digit, return false
+        if (!Character.isDigit(s.charAt(index))) return false;
+        return checkDigits(s, index + 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isAllDigits("123456")); // "Yes"
+        System.out.println(isAllDigits("123a12")); // "No"
+    }
+}

@@ -25,3 +25,6 @@ Returns the nth Fibonacci number using recursive method
 
 ## 6. Power calculation
 Computes a^n (a raised to power n) recursively
+
+## 7. Array reversal
+Reverses the elements of an array in-place using recursion

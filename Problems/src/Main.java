@@ -108,3 +108,29 @@ class Power {
         System.out.println(power(2, 10));
     }
 }
+
+// Problem 7
+class ReverseArray {
+    // Recursive array reversal
+    public static void reverseArray(int[] arr, int start, int end) {
+        if (start >= end) return;
+
+        // Swap elements at start and end positions
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+
+        reverseArray(arr, start + 1, end - 1);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 4, 6, 2};
+        // Call reverse
+        reverseArray(arr, 0, arr.length - 1);
+
+        // Print reversed array
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
